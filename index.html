@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="main-header">The code Review</h1>
+        <div class="container header">
+            <h2 class="head">Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+            <hr class="thick">
+            <hr class="thin">
+        </div>
+    </header>
+    <div class="container">
+        <form action="#">
+            <fieldset class="first">
+                <legend class="head contact">Contact Information</legend>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user-name" placeholder="required">
+
+                <label for="email">Email Address</label>
+                <input type="email" name="user-email" id="email" placeholder="required">
+
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="user-phone" id="phone-number">
+
+                <label for="street">Street Address</label>
+                <input type="text" name="user-street" id="street">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="user-city">
+
+                <label for="state">State</label>
+                <select name="user-state" id="state">
+                    <option value="state">Choose State</option>
+                    <option value="Accra">Greater Accra</option>
+                    <option value="Ashanti">Ashanti Region</option>
+                    <option value="Accra">Greater Accra</option>
+                    <option value="Eastern">Eastern Region</option>
+                    <option value="Volta">Volta Region</option>
+                    <option value="central">Central Region</option>
+                    <option value="western">Western Region</option>
+                    <option value="Bono">Brong-Ahafo Region</option>
+                    <option value="Northern">Northern Region</option>
+                </select>
+
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="user-zip">
+            </fieldset>
+            <hr class="thin mid">
+
+            <fieldset class="second">
+                <legend class="head">Newsletter</legend>
+                <label>Select the newsletters you would like to receive</label><br>
+                <input type="checkbox" value="choice-html" name="user-choice" id="html"><label for="html"
+                    class="special">HTML
+                    News</label><br>
+                <input type="checkbox" value="choice-css" name="user-choice" id="css"><label for="css"
+                    class="special">CSS
+                    News</label><br>
+                <input type="checkbox" value="choice-javascript" name="user-choice" id="javascript"><label
+                    for="javascript" class="special">Javascript News</label><br>
+
+                <label>Newsletter format</label><br>
+                <input type="radio" name="user-choice" id="html-format" value="choice-html-format"><label
+                    for="html-format" class="special">HTML</label><br>
+                <input type="radio" name="user-choice" id="plain-format" value="choice-plain-format"><label
+                    for="plain-format" class="special">Plain text</label><br>
+
+                <label for="other">Other topics you'd like to hear about</label><br>
+                <textarea name="user-topic" id="other"></textarea><br>
+
+                <button type="submit">Sign Up</button>
+
+                <footer class="form-footer">Copyright The Code Review</footer>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
