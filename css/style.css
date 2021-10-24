@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  /* max-width: 1000px; */
+  color: #354657;
+}
+
+.main-header {
+  background-color: #354657;
+  color: #fff;
+  padding: 30px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.head {
+  color: #354657;
+  font-weight: 700;
+  padding-top: 10px;
+  margin-bottom: 8px;
+  font-size: 1.7em;
+}
+
+.head + p {
+  font-size: 1.4rem;
+  margin: 8px 0 40px;
+  color: #b1b3b6;
+}
+
+.thick {
+  border-top: 5px solid #354657;
+  margin-bottom: 2px;
+  width: 93%;
+}
+
+.thin {
+  border-top: 3px solid #354657;
+  margin-top: 2px;
+  width: 93%;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+select,
+textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 23px;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(240, 240, 240);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 3px solid #354657;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.3em;
+  /* margin-bottom: 15px; */
+  margin: 12px 0 15px;
+}
+
+::placeholder {
+  float: right;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+#zip {
+  width: 50%;
+  display: block;
+}
+
+.mid {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.second {
+  padding-left: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.special {
+  margin-left: 10px;
+  margin-top: 9px;
+}
+
+textarea {
+  padding: 50px;
+}
+
+button {
+  padding: 25px;
+  width: 100%;
+  font-size: 1.8rem;
+  background: rgb(64, 170, 170);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+button:focus {
+  outline: none;
+  border: 3px solid #354657;
+}
+
+.form-footer {
+  text-align: center;
+  font-style: italic;
+  margin-top: 40px;
+  color: #b1b3b6;
+}
+
+@media screen and (min-width: 760px) {
+  .thick,
+  .thin {
+    width: 96%;
+  }
+
+  .container {
+    width: 60%;
+    max-width: 1024px;
+  }
+
+  .first {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .first label {
+    width: 25%;
+    padding-top: 20px;
+  }
+
+  .first input,
+  .first select {
+    width: 75%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  #zip {
+    width: 25%;
+  }
+}
